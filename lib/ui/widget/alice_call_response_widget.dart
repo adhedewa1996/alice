@@ -2,7 +2,7 @@ import 'package:alice/model/alice_http_call.dart';
 import 'package:alice/ui/widget/alice_base_call_details_widget.dart';
 import 'package:alice/utils/alice_constants.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+// import 'package:url_launcher/url_launcher.dart';
 
 class AliceCallResponseWidget extends StatefulWidget {
   final AliceHttpCall call;
@@ -202,7 +202,7 @@ class _AliceCallResponseWidgetState
     rows.add(TextButton(
       child: Text("Open video in web browser"),
       onPressed: () async {
-        await launchUrl(Uri.parse(_call.uri));
+        // await launchUrl(Uri.parse(_call.uri));
       },
     ));
     rows.add(const SizedBox(height: 8));

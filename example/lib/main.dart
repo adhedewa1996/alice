@@ -44,7 +44,7 @@ class _MyAppState extends State<MyApp> {
     _chopper = ChopperClient(
       interceptors: _alice.getChopperInterceptor(),
     );
-    _postsService = PostsService.create(_chopper);
+    // _postsService = PostsService.create(_chopper);
 
     super.initState();
   }
